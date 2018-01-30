@@ -8,6 +8,9 @@
 .mcontent{
 	background-color:#FFFFFF;
 	padding-top:5px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom:0px;
 }
 
 <!----------------------------------------------------------------------------------------> 
@@ -25,13 +28,13 @@ text-decoration:  none;}
 	border: 2px solid #7F7F7F;
 	text-align: center;
 	opacity: 0.8;
-	filter: alpha(opacity=50); <!-- For IE8 and earlier -->
+	filter: alpha(opacity=80); <!-- For IE8 and earlier -->
 	box-sizing: border-box;
 	margin: 2px;
 }
 
 .mybutton:hover {
-	opacity: 1.0;
+	opacity: 0.99;
 	filter: alpha(opacity=100); <!-- For IE8 and earlier -->
 }
 
@@ -97,7 +100,7 @@ text-decoration:  none;}
 
 <!-- Slideshow container -->
 	.slideshow-container {
-	max-width: 1000px;
+	width: 100%;
 	position: relative;
 	margin: auto;
 }

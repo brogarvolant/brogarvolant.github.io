@@ -80,7 +80,7 @@
 	
 	<body>
 		
-		<div class="container-fluid">
+		<div class="container-fluid" margin="0px">
 			<nav class="navbar navbar-expand-md navbar-dark" style="background-color:#891717">
 				<!-- Brand -->
 				<a class="navbar-brand" href="index.html">
@@ -105,62 +105,62 @@
 			</nav>
 		</div>
 
-		<div class="container mcontent">
-			<div class="row" position="relative" margin="auto" style="justify-content:center" width="100%">
-				<div class="col-lg-8 col-s-12">
-					<div class="row">
-					<div position="relative" margin="auto" width="100%">
-	  				
-						<div class="mySlides Slideshow-fade"><img src="img/home/slider_1.jpg" style="width:100%"></div>   
-						<div class="mySlides Slideshow-fade"><img src="img/home/slider_2.jpg" style="width:100%"></div>   
-						<div class="mySlides Slideshow-fade"><img src="img/home/slider_3.jpg" style="width:100%"></div>   
-						<div class="mySlides Slideshow-fade"><img src="img/home/slider_4.jpg" style="width:100%"></div>   
-						<div class="mySlides Slideshow-fade"><img src="img/home/slider_5.jpg" style="width:100%"></div>   
-						<div class="mySlides Slideshow-fade"><img src="img/home/slider_6.jpg" style="width:100%"></div>   
-			  
-					</div>   
-			  
-					<div class="buttonCOL">
-						<button type="button" class="btn btn-default btn-circle" onclick="currentSlide(0)"></button> 
-						<button type="button" class="btn btn-default btn-circle" onclick="currentSlide(1)"></button> 
-						<button type="button" class="btn btn-default btn-circle" onclick="currentSlide(2)"></button> 
-						<button type="button" class="btn btn-default btn-circle" onclick="currentSlide(3)"></button> 
-						<button type="button" class="btn btn-default btn-circle" onclick="currentSlide(4)"></button> 
-						<button type="button" class="btn btn-default btn-circle" onclick="currentSlide(5)"></button>
-					</div>   
-			  
-					<script>
-					  var slideIndex = 0;
-					  var slideTimer
-					  showSlides();
-			
-					  function currentSlide(n) {
-						clearTimeout(slideTimer);				    
-						showSlides(slideIndex = n);
-					  }
+		<div class="container-fluid mcontent">
+			<div class="row justify-content-center" style="background-color:#36903A;margin:0px;">
+				<div class="col-lg-8 col-s-12" style="background-color:#906336;margin:0px;">
+					<div class="row justify-content-center">
+						<div position="relative" margin="auto">
+						
+							<div class="mySlides Slideshow-fade"><img src="img/home/slider_1.jpg" style="width:100%"></div>   
+							<div class="mySlides Slideshow-fade"><img src="img/home/slider_2.jpg" style="width:100%"></div>   
+							<div class="mySlides Slideshow-fade"><img src="img/home/slider_3.jpg" style="width:100%"></div>   
+							<div class="mySlides Slideshow-fade"><img src="img/home/slider_4.jpg" style="width:100%"></div>   
+							<div class="mySlides Slideshow-fade"><img src="img/home/slider_5.jpg" style="width:100%"></div>   
+							<div class="mySlides Slideshow-fade"><img src="img/home/slider_6.jpg" style="width:100%"></div>   
+				  
+						</div>   
+				  
+						<div class="buttonCOL">
+							<button type="button" class="btn btn-default btn-circle" onclick="currentSlide(0)"></button> 
+							<button type="button" class="btn btn-default btn-circle" onclick="currentSlide(1)"></button> 
+							<button type="button" class="btn btn-default btn-circle" onclick="currentSlide(2)"></button> 
+							<button type="button" class="btn btn-default btn-circle" onclick="currentSlide(3)"></button> 
+							<button type="button" class="btn btn-default btn-circle" onclick="currentSlide(4)"></button> 
+							<button type="button" class="btn btn-default btn-circle" onclick="currentSlide(5)"></button>
+						</div>   
+				  
+						<script>
+							var slideIndex = 0;
+							var slideTimer
+							showSlides();
+				
+							function currentSlide(n) {
+								clearTimeout(slideTimer);				    
+								showSlides(slideIndex = n);
+							}
 
-					  function showSlides() {
-						  var i;
-						  var slides = document.getElementsByClassName("mySlides");
-						  var dots = document.getElementsByClassName("btn");
-						  slideIndex++;
-						  if (slideIndex > slides.length) {slideIndex = 1}    
-						  for (i = 0; i < slides.length; i++) {
-							 slides[i].style.display = "none";  
-						  }
-						  for (i = 0; i < dots.length; i++) {
-							  dots[i].className = dots[i].className.replace(" Slideshow-active", "");
-						  }
-						  slides[slideIndex-1].style.display = "block";  
-						  dots[slideIndex-1].className += " Slideshow-active";
-						  slideTimer = setTimeout(showSlides, 5000); // Change image every 5 seconds
+							function showSlides() {
+								var i;
+								var slides = document.getElementsByClassName("mySlides");
+								var dots = document.getElementsByClassName("btn");
+								slideIndex++;
+								if (slideIndex > slides.length) {slideIndex = 1}    
+								for (i = 0; i < slides.length; i++) {
+									slides[i].style.display = "none";  
+									}
+								for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" Slideshow-active", "");
+									}
+								slides[slideIndex-1].style.display = "block";  
+								dots[slideIndex-1].className += " Slideshow-active";
+								slideTimer = setTimeout(showSlides, 5000); // Change image every 5 seconds
 
-						}
-					</script>
+							}
+						</script>
 					</div>
 				</div>
-				<div class="col-lg-4 col-s-12">
-					<div class="col-s-12" padding="50px">
+				<div class="col-lg-4 col-sm-12 justify-content-center" style="background-color:#363D90">
+					<div class="col-sm-12" float="left">
 						<a href="http://www.myrmidondagorhir.com/information/get-started" imageanchor="1">
 							<div class="mybutton">
 								<img class="BTNimg" src="img/home/getstarted.jpg">
@@ -169,7 +169,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-s-12">
+					<div class="col-sm-12" float="left">
 						<a href="http://www.myrmidondagorhir.com/faq" imageanchor="1">
 							<div class="mybutton">
 								<img class="BTNimg" src="img/home/faq.jpg">
@@ -178,7 +178,7 @@
 							</div>	
 						</a>
 					</div>
-					<div class="col-s-12">
+					<div class="col-sm-12" float="left">
 						<a href="https://www.facebook.com/groups/myrmidondagorhir/" imageanchor="1">
 							<div class="mybutton">
 								<img class="BTNimg" src="img/home/facebook.jpg">

@@ -15,8 +15,7 @@
 				font-variant: normal;
 				font-weight: 500;
 				line-height: 30px;
-				color: #ffc111;
-				color: #ffc111;
+				color: #FFC111;
 				padding: 0px;
 				margin: 0px;
 				position: relative;
@@ -31,7 +30,7 @@
 				font-weight: 500;
 				line-height: 10px;
 				text-align: top;
-				color: #ffc111;
+				color: #FFC111;
 				padding: 0px;
 				margin: 0px;
 				position: relative;
@@ -58,12 +57,23 @@
 				background-position: center;
 			}
 			.mheader{
-			margin: 0px;
-			padding: 0px;
-			justify-content: center;
-			top: 0%;
+				padding-top:0px;
+				padding-left:0%;
+				padding-right:0%;
+				padding-bottom:0px;
+				margin:auto;
+				margin-bottom: 5px;
+				max-width: 1300px;
 			}
-			
+			.mcontent{
+				background-color:#FFFFFF;
+				margin:auto;
+				max-width: 1300px;
+			}
+			@media only screen and (max-width: 767.98px) {
+				.mheader{padding-left:0%;padding-right:0%;margin-bottom:0%;}
+				.mcontent{margin-left:0%;margin-right:0%;width:100%}
+				}
 			
 			.hidexs{display:none;}
 			@media only screen and (min-width: 768px) {
@@ -72,7 +82,17 @@
 			.hidexxs{display:none;}
 			@media only screen and (min-width: 320px) {
 				.hidexxs{display:inline;}
-				}	
+				}
+				
+			.zpadlr{
+				padding-left:0px;
+				padding-right:0px;
+				}
+			
+			.zmarlr{
+				margin-left:0px;
+				margin-right:0px;
+				}
 				
 		</style>
 	
@@ -80,7 +100,8 @@
 	
 	<body>
 		
-		<div class="container-fluid" margin="0px">
+		<!-- Header -->
+		<div class="container-fluid mheader">
 			<nav class="navbar navbar-expand-md navbar-dark" style="background-color:#891717">
 				<!-- Brand -->
 				<a class="navbar-brand" href="index.html">
@@ -104,12 +125,14 @@
 				</div>
 			</nav>
 		</div>
-
-		<div class="container-fluid mcontent">
-			<div class="row justify-content-center" style="background-color:#36903A;margin:0px;">
-				<div class="col-lg-8 col-s-12" style="background-color:#906336;margin:0px;">
+		
+		<!-- Content -->
+		<div class="container-fluid d-flex justify-content-center" style="background-color:#36933A;">
+			<div class="row mcontent">
+				<!-- Image Slider -->
+				<div class="col-lg-8 col-s-12">
 					<div class="row justify-content-center">
-						<div position="relative" margin="auto">
+						<div class="slideshow.container">
 						
 							<div class="mySlides Slideshow-fade"><img src="img/home/slider_1.jpg" style="width:100%"></div>   
 							<div class="mySlides Slideshow-fade"><img src="img/home/slider_2.jpg" style="width:100%"></div>   
@@ -159,8 +182,9 @@
 						</script>
 					</div>
 				</div>
-				<div class="col-lg-4 col-sm-12 justify-content-center" style="background-color:#363D90">
-					<div class="col-sm-12" float="left">
+				<!-- Buttons -->
+				<div class="col-lg-4 col-sm-12">
+					<div class="col-sm-12">
 						<a href="http://www.myrmidondagorhir.com/information/get-started" imageanchor="1">
 							<div class="mybutton">
 								<img class="BTNimg" src="img/home/getstarted.jpg">
@@ -169,7 +193,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-sm-12" float="left">
+					<div class="col-sm-12">
 						<a href="http://www.myrmidondagorhir.com/faq" imageanchor="1">
 							<div class="mybutton">
 								<img class="BTNimg" src="img/home/faq.jpg">
@@ -178,7 +202,7 @@
 							</div>	
 						</a>
 					</div>
-					<div class="col-sm-12" float="left">
+					<div class="col-sm-12">
 						<a href="https://www.facebook.com/groups/myrmidondagorhir/" imageanchor="1">
 							<div class="mybutton">
 								<img class="BTNimg" src="img/home/facebook.jpg">
@@ -188,6 +212,22 @@
 						</a>
 					</div>
 				</div>
+			</div>
+		</div>
+		<!-- Facebook Events Plugin -->
+		<div class="container-fluid d-flex justify-content-center" style="background-color:#234523">	
+			<div class="row" style="margin:auto;margin-top:10px;" width="100%">
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmyrmidondagorhir%2F
+					&tabs=events
+					&width=500
+					&height=500
+					&small_header=true
+					&adapt_container_width=true
+					&hide_cover=false
+					&show_facepile=false
+					&appId" 
+					width="400px" height="500px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
+				</iframe>
 			</div>
 		</div>
 		

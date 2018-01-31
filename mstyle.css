@@ -5,13 +5,7 @@
 .btn:focus{outline: none;}
 .btn:active{outline: none;}
 
-.mcontent{
-	background-color:#FFFFFF;
-	padding-top:5px;
-	padding-left:0px;
-	padding-right:0px;
-	padding-bottom:0px;
-}
+
 
 <!----------------------------------------------------------------------------------------> 
 <!------------------------------------- Button Format ------------------------------------>
@@ -77,7 +71,7 @@ text-decoration:  none;}
 @media only screen and (min-width: 768px) {}
 @media only screen and (min-width: 992px) {
 .mybutton { 
-	max-width: 300px; 
+	width: 300px; 
 	height: 200px;
 }
 .BTNimg{
@@ -101,8 +95,9 @@ text-decoration:  none;}
 <!-- Slideshow container -->
 	.slideshow-container {
 	width: 100%;
+	height: auto;
 	position: relative;
-	margin: auto;
+	margin: 0px;
 }
 
 <!-- The dots/bullets/indicators -->

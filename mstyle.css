@@ -5,6 +5,64 @@
 .btn:focus{outline: none;}
 .btn:active{outline: none;}
 
+<!----------------------------------------------------------------------------------------> 
+<!---------------------------------------- Fonts ----------------------------------------->
+<!---------------------------------------------------------------------------------------->
+
+@font-face {font-family: basileus;	src: url(fonts/BASILEUS.TTF)}
+@font-face {font-family: caesar;	src: url(fonts/CAESAR.TTF)}
+@font-face {font-family: dalek;	src: url(fonts/DALEK.TTF)}
+@font-face {font-family: diogenes;	src: url(fonts/DIOGENES.TTF)}
+@font-face {font-family: geliofasolada;	src: url(fonts/GelioFasolada.TTF)}
+@font-face {font-family: geliogreekdiner;	src: url(fonts/GelioGreekDiner.TTF)}
+@font-face {font-family: geliokleftiko;	src: url(fonts/GelioKleftiko.TTF)}
+@font-face {font-family: geliopasteli;	src: url(fonts/GelioPasteli.TTF)}
+@font-face {font-family: gelioretsina;	src: url(fonts/GelioRetsina.TTF)}
+@font-face {font-family: pythia;	src: url(fonts/pythia.TTF)}
+@font-face {font-family: ringbearer;	src: url(fonts/RINGBEARER.TTF)}
+@font-face {font-family: spqr;	src: url(fonts/spqr.TTF)}
+@font-face {font-family: spqri;	src: url(fonts/spqri.TTF)}
+
+<!----------------------------------------------------------------------------------------> 
+<!-------------------------------------- Site Format ------------------------------------->
+<!---------------------------------------------------------------------------------------->  
+
+.mhead{
+	font-family:caesar;
+}
+
+
+
+.hidexs{display:none;}
+@media only screen and (min-width: 768px) {
+	.hidexs{display:inline;}
+	}
+	
+.hidexxs{display:none;}
+@media only screen and (min-width: 320px) {
+	.hidexxs{display:inline;}
+	}
+	
+.zpadlr{
+	padding-left:0px;
+	padding-right:0px;
+	}
+
+.zmarlr{
+	margin-left:0px;
+	margin-right:0px;
+	}
+	
+.webbody{
+	max-width:1500px;
+}	
+
+.homepage{
+	background-image:url("img/home/slider_1.jpg");
+	background-size:cover;
+	height: 600px;
+	width: auto;
+)
 
 
 <!----------------------------------------------------------------------------------------> 
@@ -103,7 +161,7 @@ text-decoration:  none;}
 .mySlides img {vertical-align: middle;}
 
 <!-- Slideshow container -->
-	.slideshow-container {
+.slideshow-container {
 	max-width: 500px;
 	height: auto;
 	position: relative;
@@ -111,7 +169,7 @@ text-decoration:  none;}
 }
 
 <!-- The dots/bullets/indicators -->
-	.mySlides-dot {
+.mySlides-dot {
 	height: 15px;
 	width: 15px;
 	margin: 0 2px;

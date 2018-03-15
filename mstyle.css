@@ -39,6 +39,12 @@
 	
 }
 
+.brandimg{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
 .brand1{				
 	font-family: dalek;
 	font-size: 30px;
@@ -53,6 +59,7 @@
 	top: 0px;
 	left: 2px;
 }
+
 .brand2{
 	font-family: dalek;
 	font-size: 14px;
@@ -67,6 +74,13 @@
 	position: relative;
 	bottom: 12px;
 	left: 2px;
+}
+
+@media only screen and (max-width:767px) {
+	.brand1{
+		font-size: 36px;
+		top: 10px;
+	}
 }
 
 .hidexs{display:none;}
@@ -177,6 +191,7 @@ text-decoration:  none;}
 @media only screen and (min-width: 768px) {
 	.mybutton { 
 		height: 200px;
+		width: 300px;
 	}
 	.BTNimg{
 		display: block;

@@ -114,6 +114,16 @@
 	width: auto;
 }
 
+.nav-link{
+	font-family: dalek;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 14px;
+	text-align: top;
+	color: #FFC111;
+}
 
 <!----------------------------------------------------------------------------------------> 
 <!------------------------------------- Button Format ------------------------------------>
@@ -227,6 +237,7 @@ text-decoration:  none;}
 	text-align: center;
 	margin: 2px;
 	padding: 0px;
+	background-image: none;
 	background-size: cover;
 	background-position: center top;
 }
@@ -243,7 +254,7 @@ text-decoration:  none;}
 	box-sizing: border-box;
 	border-top: 2px solid #7F7F7F;
 	
-	background-image:url('img/common/leather_red.jpg');
+	background-image:url('img/common/ribbon_leather_red.jpg');
 	background-size:cover;
 	background-position: center bottom;
 	

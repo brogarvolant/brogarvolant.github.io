@@ -101,18 +101,91 @@
 	margin-left:0px;
 	margin-right:0px;
 	}
+
+.nopadmar{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
 	
 .webbody{
 	max-width:1500px;
 }	
 
 .mbackground{
-	background-size:cover;
-	background-position: center top;
 	height: 100vh;
-	width: auto;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	background-size: cover;
+	background-position: center top;
 }
 
+@media screen and (min-width: 992px){
+	.background{
+		height: 100%
+	}
+}
+
+.mcontent{
+	max-width: 992px;
+	height: auto;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+@media screen and (min-width: 992px){
+	.mcontent{
+		width: 100%
+	}
+}
+
+.leftcontent{
+	width:660px;
+	height:100%;
+}
+
+.rightcontent{
+	width:300px;
+	height:100%;
+}
+
+@media screen and (max-width: 991px){
+	.leftcontent{
+		width:100%;
+		height:auto;
+	}
+	.rightcontent{
+		width:100%;
+		height:auto;
+	}
+}
+
+.image{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	max-width: 600px;
+	margin-bottom: 10px;
+	border: 3px solid #7F7F7F;
+}
+
+@media screen and (min-width: 992px){
+	.image{
+		width: 400px;
+		height: auto;
+		float: right;
+		margin-left: 10px;
+		margin-bottom: 10px;
+		border: 3px solid #7F7F7F;
+	}
+}
+	
 .nav-link{
 	font-family: dalek;
 	font-size: 24px;
@@ -124,6 +197,21 @@
 	color: #FFC111;
 }
 
+.rightbar{
+	width: auto;
+	height: 100hv;
+	position: relative;
+	top: 5px;
+	right: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+	.rightbar { 
+		width: 100%;
+		height: auto;
+	}
+}
+	
 <!----------------------------------------------------------------------------------------> 
 <!------------------------------------- Button Format ------------------------------------>
 <!---------------------------------------------------------------------------------------->      
@@ -198,8 +286,8 @@ text-decoration:  none;}
 }
 @media only screen and (min-width: 768px) {
 	.mybutton { 
-		height: 200px;
-		width: 300px;
+		height: 120px;
+		width: 200px;
 	}
 	.BTNimg{
 		display: block;
@@ -219,18 +307,20 @@ text-decoration:  none;}
 <!----------------------------------------------------------------------------------------> 
 <!------------------------------------- btnv2 Format ------------------------------------>
 <!----------------------------------------------------------------------------------------> 
-
-.mybox {
-	height:100px;
-	width: 150px;
-	background-color:#7F7F7F;
+.btnrow{
+	width:100%;
+	height:auto;
+	position:relative;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding:0px;
 }
 
 .btnv2 {
 	position: relative;
 	float: left;
-	width: 360px;
-	height: 225px;
+	width: 200px;
+	height: 150px;
 	box-sizing: border-box;
 	border: 2px solid #7F7F7F;
 	text-align: center;
@@ -254,8 +344,6 @@ text-decoration:  none;}
 	border-top: 2px solid #7F7F7F;
 	
 	background-color: #891717;
-	<!-- background-image:url('img/common/ribbon_leather_red.jpg'); -->
-	background-size:cover;
 	background-position: center bottom;
 	
 	color: #FFC111;
@@ -268,13 +356,18 @@ text-decoration:  none;}
 	border: 3px solid #FFC111;
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
 	.btnv2{
 		height: 60px;
 		width: 100%;
 		background-size: initial;
+		margin-left:0px;
+		margin-right:0px;
 	}
-	.b2text{border: none;}
+	.b2text{
+		border: none;
+		font-size: 28px;
+	}
 }
 
 <!-- ---------------------------------------------------------------------------------- -->  

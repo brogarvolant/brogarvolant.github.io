@@ -36,11 +36,35 @@
 				<!-- Navbar links -->
 				<div class="collapse navbar-collapse" id="collapsibleNavbar">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="Agora.html">Agora</a></li>
-						<li class="nav-item"><a class="nav-link" href="Bouleuterion.html">Bouleuterion</a></li>
-						<li class="nav-item"><a class="nav-link" href="Gymnasium.html">Gymnasium</a></li>
-						<li class="nav-item"><a class="nav-link" href="Theater.html">Theater</a></li>
+						<li class="dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Agora.html">Agora</a>
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+							  <li class="nav-item"><a class="nav-link ddlink" href="#">Marketplace</a></li>
+							  <li class="nav-item"><a class="nav-link ddlink" href="#">Crafting Guides</a></li>
+							  <li class="nav-item"><a class="nav-link ddlink" href="#">Crafting Materials</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Gymnasium.html">Gym</a>
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+							  <li class="nav-item"><a class="nav-link ddlink" href="#">Combat Guides</a></li>
+							  <li class="nav-item"><a class="nav-link ddlink" href="#">Units</a></li>
+							  <li class="nav-item"><a class="nav-link ddlink" href="#">Members</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Theater.html">Theater</a>
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+							  <li class="nav-item"><a class="nav-link ddlink" href="#">Photo Gallery</a></li>
+							  <li class="nav-item"><a class="nav-link ddlink" href="#">Video Gallery</a></li>
+							  <li class="nav-item"><a class="nav-link ddlink" href="#">Character Guides</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="Council.html">Council</a></li>
+						<li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -50,25 +74,28 @@
 		<div class="d-flex flex-wrap justify-content-center">
 			<div class="nopadmar d-flex flex-wrap mcontent">
 				<!-- Text and Buttons -->
-				<div class="d-flex flex-wrap justify-content-center nopadmar leftcontent">
-					<div class="d-flex justify-content-center" style="width:100%;background-color:#FFFFFF;padding:10px;">
-						<div>
+				<div class="d-flex flex-wrap justify-content-center leftcontent">
+					<div class="d-flex justify-content-center mbox" style="width:100%;position:relative;">
+						<div class="mbox" style="min-height:440px;">
 							<img class="image" alt="Charlotte Dagorhir" src="img/home/slider_1.jpg">
 							<p>Welcome to Charlotte Dagorhir!</p>
 							<p>We are the Charlotte chapter of Dagorhir Battle Games. Dagorhir is a full contact medieval combat sport.</p>
+							<div class="ecolor" style="background-color:#FFFFFF;opacity:0.8;"></div>
 						</div>
 					</div>
-					<div class="container-fluid justify-content-center d-flex flex-wrap btnrow" style="margin-top:5px;">
+					<div class="container-fluid justify-content-center d-flex flex-wrap btnrow mbox">
 						<!-- Buttons -->
 						<a class="btnv2" href="#" imageanchor="1" style="background-image:url('img/home/getstarted.jpg');"><div class="b2text">Get Started</div></a>
-						<a class="btnv2" href="#" imageanchor="1" style="background-image:url('img/home/faq.jpg');"><div class="b2text">FAQ</div></a>
-						<a class="btnv2" href="https://www.facebook.com/groups/charlottedagorhir/" imageanchor="1" style="background-image:url('img/home/facebook.jpg');"><div class="b2text">Facebook</div></a>
+						<a class="btnv2" href="https://www.facebook.com/groups/charlottedagorhir/" imageanchor="1" style="background-image:url('img/home/facebook.jpg');"><div class="b2text">Join us on Facebook</div></a>
 					</div>
 				</div>
 				<!-- Events Bar -->
-				<div class="container-fluid rightcontent">
-					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCharlotte-Dagorhir-597190490621467%2F&tabs=events&width=300&height=700&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="300" height="700" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media">
-					</iframe>
+				<div class="d-flex flex-wrap justify-content-center rightcontent mbox">
+					<a class="btnv2" href="https://www.facebook.com/pg/Charlotte-Dagorhir-597190490621467/events/" style="width:100%;height:50px;"><div class="b2text" style="border:none"> Upcoming Events! </div></a>
+					<div style="margin:auto;">
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCharlotte-Dagorhir-597190490621467%2F&tabs=events&width=300&height=700&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" style="border:none;overflow:hidden;width:100%;height:620px;" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media">
+						</iframe>
+					</div>
 				</div>
 			</div>
 		</div>

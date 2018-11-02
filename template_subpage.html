@@ -54,21 +54,63 @@
 			
 			<div class="BP-title">	<h1>Template: Subpage</h1>	</div>
 			
-			<div class="navbar-toggler arrow-right" data-toggle="collapse" data-target="#row1"></div>
-
-			<div class="dropdown">
-				<div class="dropdown-content" id="row1">
-					<img src="img/home/slider_3.jpg" style="height:200px;width:auto;">
-					<p>This is a dropdown</p>
+			<div class="TP-container">
+			
+				<div class="collapsible"><span class="arrow right"></span><h2 style="padding-left:10px;">Category 1</h2></div>
+				<div class="collapsible-content TP-scrollmenu">
+					<img src="img/home/slider_3.jpg">
+					<img src="img/home/slider_4.jpg">
+					<img src="img/home/slider_5.jpg">
 				</div>
-			</div>		
+				
+				<div class="collapsible"><span class="arrow right"></span><h2 style="padding-left:10px;">Category 2</h2></div>
+				<div class="collapsible-content TP-scrollmenu">
+					<img src="img/home/slider_3.jpg">
+					<img src="img/home/slider_4.jpg">
+					<img src="img/home/slider_5.jpg">
+				</div>
+					
+				<div class="collapsible"><span class="arrow right"></span><h2 style="padding-left:10px;">Category 3</h2></div>
+				<div class="collapsible-content TP-scrollmenu">
+					<img src="img/home/slider_3.jpg">
+					<img src="img/home/slider_4.jpg">
+					<img src="img/home/slider_5.jpg">
+				</div>
+
+				<div class="collapsible"><span class="arrow right"></span><h2 style="padding-left:10px;">Category 4</h2></div>
+				<div class="collapsible-content TP-scrollmenu">
+					<img src="img/home/slider_3.jpg">
+					<img src="img/home/slider_4.jpg">
+					<img src="img/home/slider_5.jpg">
+				</div>
+				
+			</div>
 
 			<div id="myModal" class="modal">
 			  <span class="modal-close">&times;</span>
 			  <img class="modal-content" id="img01">
 			  <div id="caption"></div>
 			</div>
+			
+			<script>
+				var coll = document.getElementsByClassName("collapsible");
+				var i;
 
+				for (i = 0; i < coll.length; i++) {
+				  coll[i].addEventListener("click", function() {
+					$(this).find(".right").toggleClass("down")
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.display === "block") {
+					  content.style.display = "none";
+					} else {
+					  content.style.display = "block";
+					}
+				  });
+				}
+			</script>
+			
+			
 			<script>
 			// Get the modal
 			var modal = document.getElementById('myModal');
